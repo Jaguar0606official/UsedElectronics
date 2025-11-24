@@ -1,0 +1,94 @@
+﻿<Window x:Class="IqooNeo10.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Панель администратора"
+        MinHeight="300" MinWidth="380" Width="450" MaxHeight="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#FF58EFBB">
+
+    <Border Background="White" Padding="20" Margin="20"
+            BorderBrush="#D3D9E3" BorderThickness="1" CornerRadius="12">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Заголовок -->
+            <TextBlock Text="Панель администратора"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="#2A2D34"
+                       HorizontalAlignment="Center"
+                       Margin="0,5,0,15"/>
+
+            <!-- Описание -->
+            <Border Grid.Row="1"
+                    Background="#F7F9FC"
+                    Padding="12"
+                    Margin="0,0,0,15"
+                    BorderThickness="1"
+                    BorderBrush="#E2E6EC">
+                <TextBlock Text="Вы можете переходить на окна программы, просматривать историю и очищать данные каталога электроприборов."
+                           TextWrapping="Wrap"
+                           FontSize="14"
+                           Foreground="#4A4E56"/>
+            </Border>
+
+            <!-- Кнопки -->
+            <StackPanel Grid.Row="2"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center"
+                        Width="260">
+
+                <!-- Каталог -->
+                <Button Height="42" Margin="0,0,0,10"
+                        Background="#4A90E2"
+                        Foreground="White"
+                        FontWeight="SemiBold"
+                        BorderBrush="#4A90E2"
+                        BorderThickness="1"
+                        Click="OpenMarket_Button_Click">
+                    Открыть каталог
+                </Button>
+
+                <!-- История -->
+                <Button Height="42" Margin="0,0,0,10"
+                        Background="#6C63FF"
+                        Foreground="White"
+                        FontWeight="SemiBold"
+                        BorderBrush="#6C63FF"
+                        BorderThickness="1"
+                        Click="OpenHistory_Button_Click">
+                    История
+                </Button>
+
+                <!-- Очистить -->
+                <Button Height="42" Margin="0,0,0,10"
+                        Background="#D9534F"
+                        Foreground="White"
+                        FontWeight="SemiBold"
+                        BorderBrush="#D9534F"
+                        BorderThickness="1"
+                        Click="ClearAllData_Button_Click">
+                    Очистить данные
+                </Button>
+
+                <!-- Назад -->
+                <Button Height="42" Margin="0,0,0,5"
+                        Background="#B0BEC5"
+                        Foreground="White"
+                        FontWeight="SemiBold"
+                        BorderBrush="#B0BEC5"
+                        BorderThickness="1"
+                        Click="BackToAvtorization_Button_Click">
+                    Назад
+                </Button>
+
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</Window>
