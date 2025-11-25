@@ -20,10 +20,10 @@
             <TextBox x:Name="ManufacturerFilterTextBox" Width="140" Margin="6,0" MaxLength="60"/>
 
             <TextBlock Text="Мин. цена:" VerticalAlignment="Center" Margin="8,0,0,0"/>
-            <TextBox x:Name="MinPriceTextBox" Width="80" Margin="6,0" PreviewTextInput="Price_PreviewTextInput"/>
+            <TextBox x:Name="MinPriceTextBox" Width="80" Margin="6,0" PreviewTextInput="Price_PreviewTextInput" DataObject.Pasting="BlockPaste" MaxLength="6"/>
 
             <TextBlock Text="Макс. цена:" VerticalAlignment="Center" Margin="8,0,0,0"/>
-            <TextBox x:Name="MaxPriceTextBox" Width="80" Margin="6,0" PreviewTextInput="Price_PreviewTextInput"/>
+            <TextBox x:Name="MaxPriceTextBox" Width="80" Margin="6,0" PreviewTextInput="Price_PreviewTextInput" DataObject.Pasting="BlockPaste" MaxLength="6"/>
 
             <Button Content="Поиск" Width="80" Margin="6,0" Click="Search_Click" Background="#FF6C63FF" Foreground="White"/>
             <Button Content="Сброс" Width="80" Margin="6,0" Click="Clear_Click" Background="#FF4A90E2" Foreground="White"/>
