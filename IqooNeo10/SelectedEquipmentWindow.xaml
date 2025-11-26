@@ -1,7 +1,7 @@
 ﻿<Window x:Class="IqooNeo10.SelectedEquipmentWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Информация о товаре" MinHeight="640" MinWidth="880" MaxHeight="700" MaxWidth="880"
+        Title="Информация о товаре" MinHeight="600" MinWidth="880" MaxHeight="780" MaxWidth="880"
         WindowStartupLocation="CenterScreen" Background="#FF58EFBB">
 
     <Grid Margin="20">
