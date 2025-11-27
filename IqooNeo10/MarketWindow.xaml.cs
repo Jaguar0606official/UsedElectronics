@@ -102,7 +102,7 @@ namespace IqooNeo10
             if (EquipmentGrid.SelectedItem is DataRowView r)
                 return Convert.ToInt32(r["ID"]);
 
-            MessageBox.Show("Сначала выберите товар");
+            MessageBox.Show("Выберите товар для редактирования");
             return null;
         }
 
